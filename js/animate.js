@@ -1,4 +1,4 @@
-(function( root ) {
+(function(root) {
     root.animate = function() {
     
         var tl = new TimelineLite({});
@@ -14,4 +14,4 @@
         }, '+=1')
         .fromTo('#letter-m', 1, {drawSVG:'0 0'}, {drawSVG:'0% 100%'}, '+=0.5');
     }
-}( this ));
+}(this));
