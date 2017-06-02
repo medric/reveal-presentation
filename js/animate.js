@@ -14,4 +14,9 @@
         }, '+=1')
         .fromTo('#letter-m', 1, {drawSVG:'0 0'}, {drawSVG:'0% 100%'}, '+=0.5');
     }
+
+    root.animateText = function(el, text) {
+        TweenLite.to(el, 2, {text: text, ease: Linear.easeNone});
+    }
+
 }(this));
